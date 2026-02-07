@@ -1,0 +1,485 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Why from "../components/Why.astro";
+import Whyget from "../components/Whyget.astro";
+
+
+import { categories } from "../components/categories.js";
+
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+
+<Navbarbottom client:load></Navbarbottom>
+
+    <!-- Start Preloader 
+    ============================================= -->
+    
+
+
+
+    <!-- Start Banner Area 
+    ============================================= -->
+    <div class="banner-area navigation-circle text-light banner-style-three zoom-effect overflow-hidden">
+      <div class="absolute container z-50">
+        <div class=" container justify-center flex flex-col my-auto">
+            <div class=" lg:pl-36 md:pl-20  px-10 ">
+                <div class="justify-center flex flex-col">
+                    <h2 class=" pt-24"><strong>AgriNext Summit <br> 2026</strong></h2>
+                    <h3 class="text-2xl py-4">20 February 2026</h3>
+                    <p class=" lg:pb-10">
+                      Organised by: Kerala Startup Mission (KSUM)
+Under: KERA Scheme | In association with Department of Agriculture, Government of Kerala & World Bank
+                    </p>
+                    <a class="btn btn-theme btn-md radius animation w-fit" href="https://tickets.startupmission.in/agrinext-summit-2026" target="_blank">Apply Now</a>
+                </div>
+            </div>
+        </div>
+      </div>
+        <!-- Slider main container -->
+        <div class="banner-fade">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <!-- Single Item -->
+                <div class="swiper-slide banner-style-three">
+                    <div class="banner-thumb bg-cover shadow dark" style="background: url(/img//6.jpg);"></div>
+                   
+                </div>
+                <!-- End Single Item -->
+
+                <!-- Single Item -->
+                <div class="swiper-slide banner-style-three">
+                    <div class="banner-thumb bg-cover shadow dark" style="background: url(/img//5.jpg);"></div>
+                   
+                </div>
+                <!-- End Single Item -->
+
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>        
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Feature 
+    ============================================= -->
+    <div class="feature-style-two-area default-padding" id="about">
+        <div class="container">
+            <div class=" grid lg:grid-cols-2 grid-cols-1">
+
+                <!-- Single Item -->
+                <div class="feature-style-two info" style="background-image: url(assets/img/shape/15.png);">
+                    <div class="info">
+                        <h2 class="title mb-25">Overview</h2>
+                        <p>
+                          Kerala’s agriculture sector has access to world-class innovations — from AI-powered precision farming and climate-resilient practices to advanced post-harvest and supply-chain technologies. However, the real challenge today is not the lack of innovation, but the lack of large-scale adoption at the farm level.
+                        </p>
+                        <p class="pt-8">
+                          AgriNext Summit 2026 is conceived as a high-impact, implementation-driven summit to bridge this critical gap by directly connecting Farmers, FPOs/FPCs, and Agri-Startups, and enabling real deployments on the ground.
+                        </p>
+                       
+                    </div>
+                </div>
+               
+                <div class="feature-style-two w-full h-full">
+                    
+                  <img src="/img/1a.png">
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+     
+
+     <div class="services-style-one-area bg-gray default-padding bottom-less">
+        <div class="container">
+
+            <div class=" w-full flex flex-col items-center justify-center">
+                <div class=" max-w-4xl text-center">
+                    <div class="site-heading text-center">
+                        <h2 class="title">AgriNext under KERA</h2>
+                        <p class="text-lg text-black">
+                          Kerala Startup Mission is implementing the AgriNext Project under the KERA Scheme, in partnership with the Department of Agriculture, Government of Kerala, and supported by the World Bank.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Item -->
+                <div class="col-lg-4 col-md-6 service-one-single">
+                    <div class="service-style-one-item">
+                        <div class="thumb">
+                            <img src="/img/29.png"  alt="Image Not Found">
+                        </div>
+                        <div class="info">
+                            
+                            <p class="text-lg text-black">
+Enabling farmer access to proven, affordable, and scalable technologies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-lg-4 col-md-6 service-one-single">
+                    <div class="service-style-one-item">
+                        <div class="thumb">
+                            <img src="/img/31.png" alt="Image Not Found">
+                        </div>
+                        <div class="info">
+                            <p class="text-lg text-black">
+Creating clear deployment and procurement pathways for agri-startups
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-lg-4 col-md-6 service-one-single">
+                    <div class="service-style-one-item">
+                        <div class="thumb">
+                            <img src="/img/28 (1).png" alt="Image Not Found">
+                        </div>
+                        <div class="info">
+                            <p class="text-lg text-black">
+Strengthening FPOs and FPCs as adoption and scaling anchors
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="Vision" class="benifits-area  video-bg-live bg-cover mt--50 mt-md-0 mt-xs-0" style="background-image: url(/img/16.jpg);">
+        <div class="player" data-property="{videoURL:'w9eRIGTHKJM',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:50, opacity:1, quality:'default'}"></div>
+        <div class="shape-top-center" style="background-image: url(assets/img/shape/10.png);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-7">
+                    <div class="benifit-items text-light">
+                        <div class="shape">
+                            <img src="assets/img/illustration/8.png" alt="Image Not Found">
+                        </div>
+                        <h2 class="title">Vision: A Farmer-Centric Adoption Ecosystem</h2>
+                        <p class="text-lg">
+To establish Kerala as the national benchmark for accelerated, farmer-first agri-innovation deployment.
+<br>
+AgriNext goes beyond discussion and ideation — it is designed to deliver tangible outcomes, including pilots, partnerships, procurement, and measurable impact across agricultural districts.
+                        </p>
+                        <!-- <p>The initiative focuses on</p>
+                        <ul class="list-standard">
+                            <li>Enabling farmer access to proven, affordable, and scalable technologies</li>
+                            <li>Creating clear deployment and procurement pathways for agri-startups</li>
+                            <li>Strengthening FPOs and FPCs as adoption and scaling anchors</li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Objectives">
+      <div class=" pt-24 lg:pt-36 px-10">
+        <div class=" w-full flex flex-col items-center justify-center">
+                <div class=" max-w-4xl text-center">
+                    <div class="site-heading text-center">
+                        <h2 class="title">Objectives</h2>
+                    </div>
+                </div>
+            </div>
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-4 h-auto">
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-4 h-auto group">
+              <div class="border px-4 py-10 rounded-xl h-full group-hover:bg-[#49a760]  group-hover:duration-700 transition duration-700 ">
+                  <h1 class=" text-xl lg:text-2xl pb-2 group-hover:text-white group-hover:duration-700 transition duration-700">Match & Deploy</h1>
+                  <p class="group-hover:text-white group-hover:duration-700 transition duration-700">
+                    Facilitate structured matchmaking between Farmers/FPOs/FPCs and validated Agri-Startups, leading to signed pilot MoUs, adoption agreements, and procurement pathways.
+                  </p>
+              </div>
+              <div class=" overflow-hidden h-full rounded-xl ">
+                <div class="h-full rounded-xl group-hover:scale-125 group-hover:duration-700 duration-700" style="background-image: url('/img/7.svg');"></div>
+              </div>
+          </div>
+          
+           <div class="grid md:grid-cols-2 grid-cols-1 gap-4 h-auto group">
+              <div class="border px-4 py-10 rounded-xl h-full group-hover:bg-[#49a760]  group-hover:duration-700 transition duration-700 ">
+                  <h1 class=" text-xl lg:text-2xl pb-2 group-hover:text-white group-hover:duration-700 transition duration-700">Problem–Solution Mapping</h1>
+                  <p class="group-hover:text-white group-hover:duration-700 transition duration-700">
+                    Identify district-specific and crop-specific agricultural challenges and map them to market-ready, deployable technology solutions.
+                  </p>
+              </div>
+              <div class=" overflow-hidden h-full rounded-xl ">
+                <div class="h-full rounded-xl group-hover:scale-125 group-hover:duration-700 duration-700" style="background-image: url('/img/g.svg');"></div>
+              </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-4 h-auto group">
+              <div class=" overflow-hidden h-full rounded-xl ">
+                <div class="h-full rounded-xl group-hover:scale-125 group-hover:duration-700 duration-700" style="background-image: url('/img/4.svg');"></div>
+              </div>
+              <div class="border px-4 py-10 rounded-xl h-full group-hover:bg-[#49a760]  group-hover:duration-700 transition duration-700 ">
+                  <h1 class=" text-xl lg:text-2xl pb-2 group-hover:text-white group-hover:duration-700 transition duration-700">Empower FPO & FPC Anchors</h1>
+                  <p class="group-hover:text-white group-hover:duration-700 transition duration-700">
+                    Position FPOs and FPCs as the primary vehicles for technology assimilation, collective adoption, and scale across farmer clusters.
+                  </p>
+              </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-4 h-auto group">
+              <div class=" overflow-hidden h-full rounded-xl ">
+                <div class="h-full rounded-xl group-hover:scale-125 group-hover:duration-700 duration-700" style="background-image: url('/img/5.svg');"></div>
+              </div>
+              <div class="border px-4 py-10 rounded-xl h-full group-hover:bg-[#49a760]  group-hover:duration-700 transition duration-700 ">
+                  <h1 class=" text-xl lg:text-2xl pb-2 group-hover:text-white group-hover:duration-700 transition duration-700">Scalable Model Creation</h1>
+                  <p class="group-hover:text-white group-hover:duration-700 transition duration-700">
+                    Develop a replicable, high-efficiency framework for sustained, state-wide agri-innovation deployment under the KERA ecosystem.
+                  </p>
+              </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+     <div class="timeline-area default-padding" style="background-image: url(assets/img/shape/21.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading">
+                        <h2 class="title">Summit Experience</h2>
+                        <div class="row">
+                            <div class="col-xl-10 offset-xl-2">
+                                <p>
+Unlike conventional conferences, AgriNext is designed as a working platform where discussions directly translate into decisions and agreements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 items-center justify-center w-full">
+                <div class="fun-fact flex flex-col items-center justify-center">
+                    <div class="counter">
+                        <div class="timer" data-to="650" data-speed="1000">650</div>
+                        <div class="operator">+</div>
+                    </div>
+                    <span class="medium">Farmers & FPO/FPC Leaders</span>
+                    <p>Primary beneficiaries & adopters</p>
+                </div>
+                <div class="fun-fact flex flex-col items-center justify-center">
+                    <div class="counter">
+                        <div class="timer" data-to="200" data-speed="1000">200</div>
+                        <div class="operator">+</div>
+                    </div>
+                    <span class="medium">Vetted Agri-Startups</span>
+                    <p>Validated solution providers</p>
+                </div>
+                <div class="fun-fact flex flex-col items-center justify-center">
+                    <div class="counter">
+                        <div class="timer" data-to="250" data-speed="1000">250</div>
+                        <div class="operator">+</div>
+                    </div>
+                    <span class="medium">Experts, Policymakers & Institutional Buyers</span>
+                    <p>Enablers of scale & procurement</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+      <div id="Highlights" class="service-style-two-area half-bg-dark-bottom default-padding-top bg-gray mb-24">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="text-center pb-20">
+                        <h2 class="mask-text large" style="background-image: url(/img/18.jpg);">Highlights</h2>
+                    </div>
+                </div>
+            </div>
+             <div class="container">
+            <div class="">
+                <div class=" grid md:grid-cols-2  grid-cols-1 gap-4">
+                        <!-- Single product -->
+                        <div class="product fruit">
+                            <div class="product-contents">
+                                <div class="product-image">
+                                    <a >
+                                        <img src="/img/h1.svg" alt="Product">
+                                    </a>
+                                    
+                                </div>
+                                <div class="product-caption">
+                                   
+                                    <h4 class="product-title text-xl pb-3">
+                                        <a >Farmer-Led Problem Briefings</a>
+                                    </h4>
+                                   <p>
+                                    Real challenges articulated by farmers and FPOs, framed as deployment opportunities for startups.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single product -->
+
+                        <div class="product fruit">
+                            <div class="product-contents">
+                                <div class="product-image">
+                                    <a >
+                                        <img src="/img/h2.svg" alt="Product">
+                                    </a>
+                                    
+                                </div>
+                                <div class="product-caption">
+                                   
+                                    <h4 class="product-title text-xl pb-3">
+                                        <a >
+Live Technology Adoption Zones
+                                        </a>
+                                    </h4>
+                                   <p>
+                                    Hands-on demonstrations of technologies in real-world contexts — not static exhibitions.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product fruit">
+                            <div class="product-contents">
+                                <div class="product-image">
+                                    <a >
+                                        <img src="/img/h3.svg" alt="Product">
+                                    </a>
+                                    
+                                </div>
+                                <div class="product-caption">
+                                   
+                                    <h4 class="product-title text-xl pb-3">
+                                        <a >
+Curated 1:1 Matchmaking
+                                        </a>
+                                    </h4>
+                                   <p>
+                                    Pre-scheduled, need-based business meetings between farmers/FPOs and startups with high adoption potential.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product fruit">
+                            <div class="product-contents">
+                                <div class="product-image">
+                                    <a >
+                                        <img src="/img/h4.svg" alt="Product">
+                                    </a>
+                                    
+                                </div>
+                                <div class="product-caption">
+                                   
+                                    <h4 class="product-title text-xl pb-3">
+                                        <a >
+Agreement & Deployment Facilitation
+                                        </a>
+                                    </h4>
+                                   <p>
+                                    Dedicated facilitation desks to support pilot MoUs, adoption agreements, and procurement discussions.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+
+
+
+
+  <div class="container py-24">
+    <div class="row align-center">
+      <div class="col-lg-12 product-cat-info">
+        <h6 class="mask-text text-3xl md:text-5xl font-extrabold" style="background-image: url(/img/17.jpg);">Join AgriNext Summit 2026 and be part of <br>Kerala’s agricultural transformation.</h>
+      </div>
+      <p class="text-xl"> From Innovation to Adoption. From Pilots to Impact.</p>
+    </div>
+  </div>
+
+    <!-- Start Footer 
+    ============================================= -->
+    <footer class="text-light">
+        <div class="container">
+           
+            <div class="footer-bottom text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="text-black pt-4">&copy; Copyright 2026. All Rights Reserved by Kerala Startup Mission</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Bottom -->
+        </div>
+        <div class="shape-right-bottom">
+            <img src="assets/img/shape/7.png" alt="Image Not Found">
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    </Layout>
+    
+   
+<script is:inline>
+  document.querySelectorAll("a.page-scroll").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = anchor.getAttribute("href");
+      const targetId = href.replace(/^\/?#/, "");
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+
+        targetElement.scrollIntoView({ behavior: "smooth" });
+
+        history.replaceState(null, null, window.location.pathname);
+      }
+    });
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetId = hash.replace("#", "");
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+          history.replaceState(null, null, window.location.pathname);
+        }, 100);
+      }
+    }
+  });
+</script>
