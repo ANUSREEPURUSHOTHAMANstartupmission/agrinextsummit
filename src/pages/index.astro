@@ -26,7 +26,7 @@ import { categories } from "../components/categories.js";
 
     <!-- Start Banner Area 
     ============================================= -->
-    <div class="banner-area navigation-circle text-light banner-style-three zoom-effect overflow-hidden">
+    <div class="banner-area navigation-circle text-light banner-style-three zoom-effect overflow-hidden h-screen">
       <div class="absolute container z-50">
         <div class=" container justify-center flex flex-col my-auto">
             <div class=" lg:pl-36 md:pl-20  px-10 ">
@@ -276,7 +276,7 @@ Unlike conventional conferences, AgriNext is designed as a working platform wher
                     </div>
                 </div>
             </div>
-            <div class="content grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 items-center justify-center w-full">
+            <div class="content grid lg:grid-cols-3 md:grid-cols-2 gap-4 grid-cols-1 items-center justify-center w-full">
                 <div class="fun-fact flex flex-col items-center justify-center">
                     <div class="counter">
                         <div class="timer" data-to="650" data-speed="1000">650</div>
@@ -420,7 +420,7 @@ Agreement & Deployment Facilitation
 
 
 
-  <div class="container py-24">
+  <div class="container lg:py-24">
     <div class="row align-center">
       <div class="col-lg-12 product-cat-info">
         <h6 class="mask-text text-3xl md:text-5xl font-extrabold" style="background-image: url(/img/17.jpg);">Join AgriNext Summit 2026 and be part of <br>Kerala’s agricultural transformation.</h>
@@ -449,9 +449,37 @@ Agreement & Deployment Facilitation
     </footer>
     <!-- End Footer -->
 
+
+
+    <div
+  id="scrollArrow"
+  class="fixed bottom-6 right-6 hidden cursor-pointer bg-black/70 hover:bg-black text-white p-3 rounded-full transition-all duration-300 z-50"
+  aria-label="Scroll to top"
+>
+  <!-- SVG Arrow -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M5 15l7-7 7 7" />
+  </svg>
+</div>
+
     </Layout>
     
-   
+   <script is:inline>
+  const arrow = document.getElementById('scrollArrow');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      arrow.classList.remove('hidden');
+    } else {
+      arrow.classList.add('hidden');
+    }
+  });
+
+  arrow.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 <script is:inline>
   document.querySelectorAll("a.page-scroll").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
