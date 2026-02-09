@@ -133,7 +133,7 @@
                         <a href="/"  class="page-scroll cursor-pointer  font-bold uppercase ">Home</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#About"  class="page-scroll cursor-pointer  font-bold uppercase  ">About</a>
+                      <a href="/#about"  class="page-scroll cursor-pointer  font-bold uppercase  ">About</a>
                     </li>
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="/#Vision"  class="page-scroll cursor-pointer  font-bold uppercase ">Vision</a>
