@@ -56,16 +56,16 @@
   
   <svelte:window bind:scrollY={y}/>
   
-    <div id="navbar"  class="fixed space-x-4  md:space-x-0 min-h-fit w-screen sm:min-h-0  left-0
+    <div id="navbar"  class="absolute space-x-4  md:space-x-0 min-h-fit w-screen sm:min-h-0  left-0
    flex sm:items-center
     ease-in-out transition-all transform duration-300
-    z-[100]  py-2
-           {scrolled ? 'bg-white top-0 shadow-md' : 'bg-white text-black '}
+    z-[100] 
+           {scrolled ? ' top-0 shadow-md' : ' text-black  md:mt-10'}
 
 
    ">
-    <div class="w-full container mx-auto  flex justify-between px-4">
-     <div class=" md:px-2 m-0 font-medium gap-2 w-fit p-0 rounded-md flex items-center justify-center ">
+    <div class="w-full container mx-auto  flex justify-between px-4 bg-white rounded-md">
+     <div class=" md:px-2 m-0 font-medium gap-2 w-fit p-2 rounded-md flex items-center justify-center ">
      
         <a href="/" >
           <img
